@@ -9,7 +9,8 @@
 
     Private Sub Btn_go_Click(sender As Object, e As EventArgs) Handles Btn_go.Click
         Dim stFirstnm As String     'this Is how you Declare a variable in vb.net
-        Dim stLastnm As String
+        Dim stLastnm As String      'follow the namign convention - super easy - always abbreviate the datatype along with the variable name
+        'st stands for string, i stands for integer, b stands for boolean, dbl stands for double like that you can use ; it helps identifying the data type without eevn going to the declaration part
         Dim stOccupation As String
         Dim stGender As String
         Dim iAge As Integer
