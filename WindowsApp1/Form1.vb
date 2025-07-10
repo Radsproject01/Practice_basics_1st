@@ -8,22 +8,18 @@
     End Sub
 
     Private Sub Btn_go_Click(sender As Object, e As EventArgs) Handles Btn_go.Click
-        Dim stFirstnm As String
+        Dim stFirstnm As String     'this Is how you Declare a variable in vb.net
         Dim stLastnm As String
         Dim stOccupation As String
         Dim stGender As String
-
+        Dim iAge As Integer
         stFirstnm = TxtFirstName.Text
         stLastnm = TxtLastName.Text
         stGender = TxtGender.Text
         stOccupation = LstOccupations.SelectedItem.ToString()
-        If LstOccupations.SelectedItem IsNot Nothing Then
-            stOccupation = LstOccupations.SelectedItem.ToString()
-        Else
-            stOccupation = "Not selected"
-        End If
-
-        MsgBox("Hi " & stFirstnm & " " & stLastnm & " You are a " & stGender & " " & stOccupation & ".")
+        iAge = TxtAge.Text
+        MsgBox("Hi " & stFirstnm & " " & stLastnm & " You are a " & stGender & " " & stOccupation & ". You are " &
+               iAge & " years old!")
 
 
     End Sub

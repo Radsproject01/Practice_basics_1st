@@ -31,6 +31,8 @@ Partial Class Form1
         Me.LblGender = New System.Windows.Forms.Label()
         Me.LstOccupations = New System.Windows.Forms.ListBox()
         Me.Occupations = New System.Windows.Forms.Label()
+        Me.LblAge = New System.Windows.Forms.Label()
+        Me.TxtAge = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Btn_go
@@ -44,21 +46,21 @@ Partial Class Form1
         '
         'TxtFirstname
         '
-        Me.TxtFirstname.Location = New System.Drawing.Point(356, 58)
+        Me.TxtFirstname.Location = New System.Drawing.Point(193, 54)
         Me.TxtFirstname.Name = "TxtFirstname"
         Me.TxtFirstname.Size = New System.Drawing.Size(161, 22)
         Me.TxtFirstname.TabIndex = 1
         '
         'TxtGender
         '
-        Me.TxtGender.Location = New System.Drawing.Point(356, 114)
+        Me.TxtGender.Location = New System.Drawing.Point(193, 110)
         Me.TxtGender.Name = "TxtGender"
         Me.TxtGender.Size = New System.Drawing.Size(161, 22)
         Me.TxtGender.TabIndex = 2
         '
         'TxtLastname
         '
-        Me.TxtLastname.Location = New System.Drawing.Point(356, 86)
+        Me.TxtLastname.Location = New System.Drawing.Point(193, 82)
         Me.TxtLastname.Name = "TxtLastname"
         Me.TxtLastname.Size = New System.Drawing.Size(161, 22)
         Me.TxtLastname.TabIndex = 3
@@ -66,7 +68,7 @@ Partial Class Form1
         'LblFirstname
         '
         Me.LblFirstname.AutoSize = True
-        Me.LblFirstname.Location = New System.Drawing.Point(278, 61)
+        Me.LblFirstname.Location = New System.Drawing.Point(115, 57)
         Me.LblFirstname.Name = "LblFirstname"
         Me.LblFirstname.Size = New System.Drawing.Size(72, 16)
         Me.LblFirstname.TabIndex = 4
@@ -75,7 +77,7 @@ Partial Class Form1
         'LblLastname
         '
         Me.LblLastname.AutoSize = True
-        Me.LblLastname.Location = New System.Drawing.Point(278, 92)
+        Me.LblLastname.Location = New System.Drawing.Point(115, 88)
         Me.LblLastname.Name = "LblLastname"
         Me.LblLastname.Size = New System.Drawing.Size(72, 16)
         Me.LblLastname.TabIndex = 5
@@ -84,7 +86,7 @@ Partial Class Form1
         'LblGender
         '
         Me.LblGender.AutoSize = True
-        Me.LblGender.Location = New System.Drawing.Point(298, 120)
+        Me.LblGender.Location = New System.Drawing.Point(135, 116)
         Me.LblGender.Name = "LblGender"
         Me.LblGender.Size = New System.Drawing.Size(52, 16)
         Me.LblGender.TabIndex = 6
@@ -109,11 +111,29 @@ Partial Class Form1
         Me.Occupations.TabIndex = 8
         Me.Occupations.Text = "Occupations"
         '
+        'LblAge
+        '
+        Me.LblAge.AutoSize = True
+        Me.LblAge.Location = New System.Drawing.Point(423, 57)
+        Me.LblAge.Name = "LblAge"
+        Me.LblAge.Size = New System.Drawing.Size(32, 16)
+        Me.LblAge.TabIndex = 9
+        Me.LblAge.Text = "Age"
+        '
+        'TxtAge
+        '
+        Me.TxtAge.Location = New System.Drawing.Point(494, 53)
+        Me.TxtAge.Name = "TxtAge"
+        Me.TxtAge.Size = New System.Drawing.Size(122, 22)
+        Me.TxtAge.TabIndex = 10
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TxtAge)
+        Me.Controls.Add(Me.LblAge)
         Me.Controls.Add(Me.Occupations)
         Me.Controls.Add(Me.LstOccupations)
         Me.Controls.Add(Me.LblGender)
@@ -139,4 +159,6 @@ Partial Class Form1
     Friend WithEvents LblGender As Label
     Friend WithEvents LstOccupations As ListBox
     Friend WithEvents Occupations As Label
+    Friend WithEvents LblAge As Label
+    Friend WithEvents TxtAge As TextBox
 End Class
