@@ -1,0 +1,14 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Build folders
+bin/
+obj/
+
+# Mac, Windows junk files
+.DS_Store
+Thumbs.db
